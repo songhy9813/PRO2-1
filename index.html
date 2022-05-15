@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Staatliches" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <title>Programming extended course - Creative Assignment 1</title>
+</head>
+<body>
+  <section id="home-spacex" class="myDiv">
+    <div class="container">
+        <h2>INTERPLANETARY TRANSPORT SYSTEM INTERFACE</h2>
+        <div class="spacex-container">
+          <content class="card">
+            <img src="image/fuel.png" alt="">
+            <div>
+              <div class="category category-para">Ships parameters</div>
+              <h3>
+                <a class="div1" id="fuelNumber" onmouseover="mover()" onmouseout="mout()">➔ Fuel</a>
+                <br/>
+                <form>
+                <a>➔ Time</a>
+                <input class="div1" type="number" id="timeNumber">
+                 <br/>
+                 <a>➔ Speed</a>
+                <input class="div1" type="number" id="speedNumber">
+                 <br/>
+                 <a>➔ Acceleration (G-force)</a>
+                <input type="button" id="acceleration" value="calculate">
+                  </form>
+                 <p id="resultAcceleration"></p>
+                </h3>
+            </div>
+            </content>
+          <content class="card bg-dark">
+            <h3>
+              <a>SpaceX</a>
+            </h3>
+            <p id="content1"> SpaceX designs, manufactures and launches advanced rockets and spacecraft.</p>
+          </content>
+          <content class="card">
+            <img src="image/food.jpg" alt="">
+            <div class="category category-supply">Supplies</div>
+            <h3>
+                <a>➔ Food</a>
+                <select class="div1" id="chose 1">
+                    <option value="Sandwich">Sandwich</option>
+                    <option value="Cookie">Cookie</option>
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Chicken">Chicken</option>
+                    <option value="Pizza">Pizza</option>
+                </select>
+                <br/>
+                <a>➔ Drink</a>
+                <select class="div1" id="chose 2">
+                <option value="Water">Water</option>
+                    <option value="Beer">Beer</option>
+                    <option value="Coffee">Coffee</option>
+                    <option value="Mlik">Milk</option>
+                    <option value="Cola">Cola</option>
+                </select>
+                  <br/>
+                <input type="button" id="supply" value="Confirm">
+                <p id="message"></p>
+            </h3>
+          </content>
+          <content class="card">
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+            <img src="image/space.jpg" alt="">
+            <h1>SPACEX</h1>
+          </content>
+          <content class="card">
+            <div class="category category-supply">Metrics</div>
+            <h3>
+               <a  href="javascript:doDisplay();" class="div1">➔ Gravity</a>
+               <div id="myDiv2">
+                  <br/>
+                   <h4>Earth:9.807m/s²</h4>
+                   <h4>Mars:3.721m/s²</h4>
+               </div>
+                <br/>
+                <a class="div1" id="myDiv3">➔ Density</a>
+                <br/>
+                <h4 id="result"></h4>
+            </h3>
+           <br/>
+            <img src="image/gravityconverter.jpg" alt="">
+          </content>
+          <content class="card bg-primary">
+            <h3>
+              <a>Travel to Mars</a>
+            </h3>
+            <p id="content2">103 passengers can travel to Mars in 2030 and paid $2,000,000 each for a ticket.</p>
+          </content>
+          <content class="card">
+            <div>
+               <div class="category category-enviro">Ships environment</div>
+              <h3>
+                <label>➔ Gravity</label>
+                <a class="div1" id="gravity"></a>
+                <br/>
+                <label>➔ Distance traveled</label>
+                <a class="div1" id= "distancetraveled"></a>
+                <br/>
+                  <label>➔ Atmosphere</label>
+                <a class="div1" id="atmosphere"></a>
+              </h3>
+            </div>
+            <img src="image/gravity.jpg" alt="">
+          </content>
+        </div>
+    </div>
+  </section>
+</body>
+</html>
